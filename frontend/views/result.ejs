@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width:800px; }
+    pre { background:#f6f6f6; padding:12px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <h2>Backend Response</h2>
+  <pre><%= JSON.stringify(backendData || {}, null, 2) %></pre>
+
+  <h3>Your submitted data</h3>
+  <pre><%= JSON.stringify(formData || {}, null, 2) %></pre>
+
+  <p><a href="/">Send another</a></p>
+</body>
+</html>
